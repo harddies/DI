@@ -9,15 +9,12 @@
 namespace services;
 
 
-use models\implement\Student;
-use models\implement\Teacher;
-
 class SchoolService
 {
     private $_student;
     private $_teacher;
 
-    public function __construct(Student $student, Teacher $teacher)
+    public function __construct(\models\implement\Student $student, \models\implement\Teacher $teacher)
     {
         $this->_student = $student;
         $this->_teacher = $teacher;
